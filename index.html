@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Homepage</title>
+    <title>Portfolio - Saroj Paudel</title>
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <!-- stats.js lib -->
     <script src="https://threejs.org/examples/js/libs/stats.min.js"></script>
@@ -45,7 +45,9 @@
             color: white;
 
         }
-
+a{
+    color: white;
+}
         header {
             height: 100px;
             padding: 15px 0;
@@ -173,7 +175,7 @@ span.blue{
         }
         button{
             font-weight: 700;
-            padding: 10px 20px;
+            padding: 10px 0px;
             border: none;
             border-radius: 50px;
             font-size: 16px;
@@ -186,7 +188,8 @@ span.blue{
             box-shadow: #ffffff93 0px 0px 10px;
         }
         button:hover i{
-            transform: translateY(0px);
+            transform: rotate(0deg);
+            /* transform: ; */
         }
 
         /* @media screen and (max-width: 950px) {
@@ -206,6 +209,7 @@ span.blue{
  button a{
     text-decoration: none;
     color: #000000;
+    padding: 10px 16px;
  }
  .buttons{
     display: flex;
@@ -222,8 +226,24 @@ span.blue{
     text-shadow: #ffffff93 0px 0px 8px;
  }
  button a i{
-    transform: translateY(-28px);
+    transform: rotate(-90deg);
+    /* visibility: hidden; */
+    display: none;
     transition: .3s;
+ }
+
+ #about{
+    /* background-color: #0f0f0f; */
+    background-image: url("bg2.webp");
+
+  /* Set a specific height */
+  min-height: 500px;
+
+  /* Create the parallax scrolling effect */
+  /* background-attachment: fixed; */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
  }
     </style>
 </head>
@@ -267,13 +287,13 @@ span.blue{
             </div>
         </div>
     </section>
-    <hr>
+    <!-- <hr> -->
     <section id="about">
         ksdnkj
     </section>
-    <hr>
+    <!-- <hr> -->
     <section id="contact">
-        jkhjhfb
+        <p>You can contact me via <a href="https://t.me/sarozpaudel">Telegram</a>.</p>
     </section>
 
     <script async src="https://unpkg.com/typer-dot-js@0.1.0/typer.js"></script>
