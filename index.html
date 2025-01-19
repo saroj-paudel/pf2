@@ -191,8 +191,11 @@ span.blue{
             transform: rotate(0deg);
             /* transform: ; */
         }
-
-        /* @media screen and (max-width: 950px) {
+        .nav{
+    display: none;
+    cursor: pointer;
+ }
+        @media screen and (max-width: 950px) {
   section .center {
     flex-direction: column;
     justify-content: center;
@@ -201,10 +204,24 @@ span.blue{
   .photo img{
     height: 180px;
   }
+  ul{
+    flex-direction: column;
+  }
   h2{
     font-size: 25px;
+    transition: .4s;
   }
-} */
+  .nav{
+    display: inline;
+  }
+  button a{
+    font-size: 13px;
+    padding: 8px 12px;
+  }
+  .container{
+    margin: 0;
+  }
+}
 
  button a{
     text-decoration: none;
@@ -232,19 +249,36 @@ span.blue{
     transition: .3s;
  }
 
- #about{
+ #contact{
     /* background-color: #0f0f0f; */
-    background-image: url("bg2.webp");
+    background-image: url("contact-us.jpg");
 
   /* Set a specific height */
   min-height: 500px;
 
   /* Create the parallax scrolling effect */
-  /* background-attachment: fixed; */
+  background-attachment: fixed;
+  
+  /* background-position: center; */
+  background-repeat: no-repeat;
+  background-size: cover;
+ }
+  
+  
+ #about{
+    /* background-color: #0f0f0f; */
+    background-image: url("bg22.jpg");
+
+  /* Set a specific height */
+  min-height: 500px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
  }
+
     </style>
 </head>
 
@@ -258,6 +292,7 @@ span.blue{
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
+        <!-- <a class="nav"><i class="fa-solid fa-bars"></i></a> -->
     </header>
     <section id="home">
         <div id="particles-js"></div>
